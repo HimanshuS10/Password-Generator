@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1C1C;
+}
+
+.hero {
+    margin: auto;
+    text-align: center;
+    background-color: #273549;
+    height: 93%;
+    width: 95%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #4ADF86;
+    font-weight: 900;
+}
+
+.title p {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.makePassword button {
+    margin: 1.5em;
+    height: 40px;
+    width: 170px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4ADF86;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.makePassword button:hover {
+    cursor: pointer;
+    animation: fade 0.5s;
+    background-color: #6e6e6e;
+    color: white;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.output {
+    display: flex;
+}
+
+.placeholder-1 {
+    margin: auto;
+    height: 50px;
+    width: 500px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder-2 {
+    margin: auto;
+    height: 50px;
+    width: 500px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder-1 p {
+    margin-right: 1em;
+}
+
+.placeholder-1 button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.placeholder-2 button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.placeholder-2 p {
+    margin-right: 1em;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slidecontainer label {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}

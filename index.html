@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <div class="title">
+                <h1>Generate a random password</h1>
+                <p>Never use an insecure password again.</p>
+            </div>
+
+            <div class="slidecontainer">
+                <input type="range" min="1" max="30" value="15" class="slider" id="myRange">
+                <label>Minimum Characters:</label>
+                <label id="demo"></label><br>
+                
+                <label>Letters Only:</label>
+                <input name="textType" type="radio" id="letterOnly"><br>
+                <label>Letter and Symbols:</label>
+                <input name="textType" type="radio" id="both">
+            </div>
+
+
+            <div class="makePassword">
+                <button id="button-pass">Generate Password</button>
+            </div>
+
+            <div class="output">
+                <div class="placeholder-1">
+                    <p id="output-1"></p>
+                </div>
+                <div class="placeholder-2">
+                    <p id="output-2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
